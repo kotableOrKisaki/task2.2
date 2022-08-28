@@ -6,18 +6,16 @@ namespace task2
     {
         static void Main(string[] args)
         {
-            string answer;
+            string password="exit";
+            string input=null;
 
-            while (true)
+            while (input != password)
             {
-                Console.WriteLine("На выход!");
-                answer = Console.ReadLine();
-                if (answer == "exit")
-                {
-                    Console.WriteLine("быбы");
-                    break;
-                }
-            }  
+                Console.WriteLine("Пароль:");
+                input = Console.ReadLine();  
+            }
+
+            Console.WriteLine("Верно");
         }
     }
 }
